@@ -15,18 +15,6 @@ function getCountPairsUsingBruteForce(arr,n,k) {
     }
     return count
 }
+console.log( getCountPairsUsingBruteForce([1,2,3,4,5,6,7,8,9,10],10,10))
 
-//Using Hashmap O(n)
-function getCountPairsUsingHashmap(arr,n,k) {
-    let count = 0;
-    let hashMap = {};
-    for(let i=0;i<n;i++) {
-        let diff = k - arr[i];
-        if(hashMap[diff] != undefined) {
-            count++;
-        }
-        hashMap[arr[i]] = 1;
-    }
-    return count;
-}
-console.log(getCountPairsUsingHashmap([1,2,3,4,5,6,7,8,9,10],10,10));
+
