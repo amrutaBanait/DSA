@@ -12,5 +12,5 @@ for(let i=0; i<array.length; i++){
         others.push(array[i])
     }
 }
-result.push(others,zeroes)
+result = [...others, ...zeroes]
 console.log(result.concat())
