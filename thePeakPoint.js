@@ -1,3 +1,5 @@
+// Question Link: https://pdfhost.io/v/1pO61Q4UY_The_Peak_Point.pdf
+
 function peakPoint(array) {
     let sortedArray = [...array];
     sortedArray.pop;
@@ -25,3 +27,11 @@ let input = `2
 10 20 11
 5
 1 3 6 5 4`;
+
+runProgram(input);
+
+/* 
+Expected Output:
+1
+2
+*/
